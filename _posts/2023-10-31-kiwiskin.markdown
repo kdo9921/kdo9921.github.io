@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "키위스킨 소개"
+date:   2023-10-31 23:08:00 +0900
+image: /assets/images/2023-10-31-kiwiskin.jpg
+categories: Programming
+---
+다른사람들과 마찬가지로 블로그를 새로 시작하기 위해 나만의 블로그 테마 개발부터 시작하였습니다. Jekyll용 키위스킨을 소개합니다.
+기존에 쓰던 워드프레스, 고스트용 키위스킨과 비슷해 보이지만 진짜 아무것도 몰랐던 시절에 만든 두 스킨과 달리 이번엔 그래도 조금은 신경써서 제작하였습니다.
+지금은 부족한 기능도 많으나 앞으로 점점 더 기능도 추가하고 꾸며보겠습니다.
+
+<!--more-->
+
+![KiwiSkin](/assets/images/2023-10-31-kiwiskin.jpg)
+
+GitHub에서 보기 : [KiwiSkin-for-Jekyll](https://github.com/kdo9921/KiwiSkin-for-Jekyll)
