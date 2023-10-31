@@ -8,13 +8,21 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}{{ '/assets/images/darae.jpg' | relative_url }}{% endif %}">
-    <meta property="og:description" content="{{ page.description | escape }}">
-    <meta property="og:site_name" content="{{ site.name }}">
+    {% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+    {% else %}
+    <meta name="description" content="{{ site.description }}">
+    {% endif %}
+    <meta property="og:site_name" content="{{ site.title }}">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ site.twitter_username }}">
     <meta name="twitter:title" content="{{ page.title }} - {{ site.title }}">
-    <meta name="twitter:description" content="{{ page.description | escape }}">
+    {% if page.excerpt %}
+    <meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+    {% else %}
+    <meta name="twitter:description" content="{{ site.description }}">
+    {% endif %}
     <meta name="twitter:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}{{ '/assets/images/darae.jpg' | relative_url }}{% endif %}">
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
