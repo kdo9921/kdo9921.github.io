@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <script src="https://kit.fontawesome.com/8e06142c67.js" crossorigin="anonymous"></script>
+    <title>{{ page.title }} | {{ site.title }}</title>
+</head>
+<body>
+    {% include header.html %}  
+    <div class="container">
+        <section>
+            {{ content }}
+        </section>
+        <div>
+            {% include sidebar.html %} 
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+</html>
