@@ -103,7 +103,9 @@ nav a:hover, .toggle-button i:hover {
 }
 
 .content img {
-    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
 }
 
 .padding {
