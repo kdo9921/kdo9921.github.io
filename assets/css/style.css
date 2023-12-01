@@ -178,6 +178,15 @@ footer {
     text-align: right;
 }
 
+blockquote:before {
+    content: "\201C";
+    font-size: 3em;
+    font-family: Georgia;
+    color: #bcbcbc;
+    float: left;
+    margin: -5px 10px 0px -10px;
+}
+
 @media (max-width: 768px) {
     .toggle-button {
         display: block;
