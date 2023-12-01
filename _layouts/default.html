@@ -33,13 +33,15 @@
 <body>
     {% include header.html %}  
     <div class="container">
-        <section>
-            {{ content }}
-        </section>
-        <div>
-            {% include sidebar.html %} 
+        <div class="content-container">
+            <section>
+                {{ content }}
+            </section>
+            <div>
+                {% include sidebar.html %} 
+            </div>
         </div>
+        {% include footer.html %}
     </div>
-    {% include footer.html %}
 </body>
 </html>
